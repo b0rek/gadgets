@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
   <ModulePrefs title="__UP_Title__" title_url="__UP_Url__" title2="gSheet View" height="400" scaling="false" description="gSheet preview as table" author="Leszek Boroch" author_email="leszek.boroch@billennium.pl" category="tools" />
-    <UserPref name="Title" display_name="Title" default_value="" datatype="string" required="true"/>
+    <UserPref name="Title" display_name="Title" default_value="JDV change console" datatype="string" required="true"/>
     <UserPref name="Height" display_name="Gadget Height" datatype="string" default_value="400"/>
     <UserPref name="Url" display_name="URL" default_value="" datatype="string" required="true"/>
-    <UserPref name="SheetName" display_name="Sheet Name" default_value="" datatype="string" required="true"/>
-    <UserPref name="FilterColumn" display_name="Filter Column (letter)" default_value="" datatype="string" required="false"/>
-    <UserPref name="FilterValue" display_name="Filter Value" default_value="" datatype="string" required="false"/>
+    <UserPref name="SheetName" display_name="Sheet Name" default_value="Public" datatype="string" required="true"/>
+    <UserPref name="FilterColumn" display_name="Filter Column (letter)" default_value="I" datatype="string" required="false"/>
+    <UserPref name="FilterValue" display_name="Filter Value" default_value="CLOSED" datatype="string" required="false"/>
   <Content type="html">
   <![CDATA[
 
-  <div id="urlframe" align="left"></div>
+  <div id="urlframe" class="sites-embed-content sites-embed-type-maestro" align="left"></div>
 
   <script type="text/javascript">
   // var someStringPref = prefs.getString("StringPrefName");
@@ -20,8 +20,7 @@
   var url = prefs.getString("Url");
   var frameheight = prefs.getString("Height");
   var el = document.getElementById("urlframe");
-  alert('XXX'+'<iframe frameborder="0" style="width: 100%; height: '+frameheight+'px" src="'+url+'" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'+'XXX');
-  el.innerHTML='<iframe frameborder="0" style="width: 100%; height: '+frameheight+'px" src="'+url+'" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'; 
+  el.innerHTML='<iframe src="'+url+'" frameborder="0" style="width: 100%; height: '+frameheight+'px" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'; 
 
 </script>
 
