@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="__UP_Title__" title_url="__UP_Url__" title2="gSheet View" height="400" scaling="false" description="gSheet preview as table" author="Leszek Boroch" author_email="leszek.boroch@billennium.pl" category="tools" />
+  <ModulePrefs title="__UP_Title__" title_url="__UP_Url__" title2="gSheet View" height="600" scaling="false" description="gSheet preview as table" author="Leszek Boroch" author_email="leszek.boroch@billennium.pl" category="tools" />
     <UserPref name="Title" display_name="Title" default_value="JDV change console" datatype="string" required="true"/>
-    <UserPref name="Height" display_name="Gadget Height" datatype="string" default_value="400"/>
+    <UserPref name="Height" display_name="Gadget Height" datatype="string" default_value="600"/>
     <UserPref name="Url" display_name="URL" default_value="" datatype="string" required="true"/>
     <UserPref name="Id" display_name="Id" default_value="" datatype="string" required="true"/>
     <UserPref name="SheetName" display_name="Sheet Name" default_value="Public" datatype="string" required="true"/>
