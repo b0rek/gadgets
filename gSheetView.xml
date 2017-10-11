@@ -4,6 +4,7 @@
     <UserPref name="Title" display_name="Title" default_value="JDV change console" datatype="string" required="true"/>
     <UserPref name="Height" display_name="Gadget Height" datatype="string" default_value="400"/>
     <UserPref name="Url" display_name="URL" default_value="" datatype="string" required="true"/>
+    <UserPref name="Id" display_name="Id" default_value="" datatype="string" required="true"/>
     <UserPref name="SheetName" display_name="Sheet Name" default_value="Public" datatype="string" required="true"/>
     <UserPref name="FilterColumn" display_name="Filter Column (letter)" default_value="I" datatype="string" required="false"/>
     <UserPref name="FilterValue" display_name="Filter Value" default_value="CLOSED" datatype="string" required="false"/>
@@ -18,9 +19,10 @@
   // var someBoolPref = prefs.getBool("BoolPrefName");
   var prefs = new gadgets.Prefs();
   var url = prefs.getString("Url");
+  var id = prefs.getString("Id");
   var frameheight = prefs.getString("Height");
   var el = document.getElementById("urlframe");
-  el.innerHTML='<iframe src="'+url+'" frameborder="0" style="width: 100%; height: '+frameheight+'px" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'; 
+  el.innerHTML='<iframe src="'+url+'?SheetName='+SheetName+'&Id='+Id+'&FilterColumn='+FilterColumn+'&FilterValue='+FilterValue+'" frameborder="0" style="width: 100%; height: '+frameheight+'px" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'; 
 
 </script>
 
