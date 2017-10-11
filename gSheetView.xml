@@ -25,7 +25,7 @@
   var filtervalue = prefs.getString("FilterValue");
   var frameheight = prefs.getString("Height");
   var el = document.getElementById("urlframe");
-  el.innerHTML='<iframe src="'+url+'?SheetName='+SheetName+'&Id='+Id+'&FilterColumn='+FilterColumn+'&FilterValue='+FilterValue+'" frameborder="0" style="width: 100%; height: '+frameheight+'px" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'; 
+  el.innerHTML='<iframe src="'+url+'?SheetName='+sheetname+'&Id='+id+'&FilterColumn='+filtercolumn+'&FilterValue='+filtervalue+'" frameborder="0" style="width: 100%; height: '+frameheight+'px" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>'; 
 
 </script>
 
