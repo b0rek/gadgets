@@ -14,6 +14,17 @@
   <div id="urlframe" class="sites-embed-content sites-embed-type-maestro" align="left"></div>
 
   <script type="text/javascript">
+  /* ======================================= */
+  /*          gSeet View Gadget              */
+  /* ======================================= */
+  /*                                         */
+  /*                                         */
+  /*   © 2017 Leszek Boroch                  */
+  /*                                         */
+  /*   leszek.boroch@contractors.roche.com   */
+  /*   leszek.boroch@billennium.pl           */
+  /*                                         */
+  /* ======================================= */
   // var someStringPref = prefs.getString("StringPrefName");
   // var someIntPref = prefs.getInt("IntPrefName");
   // var someBoolPref = prefs.getBool("BoolPrefName");
